@@ -1,0 +1,42 @@
+{
+  "about": "What a WAZO3D loader must find in these files. Picture names are the SHA-256 of the picture bytes.",
+  "pictures": {
+    "brick_floor.glb": [
+      "03c0e31d20b3fc497a2337198357e2d797231da2a0fb31e410767960fd7f2061"
+    ],
+    "brick_box.glb": [
+      "03c0e31d20b3fc497a2337198357e2d797231da2a0fb31e410767960fd7f2061"
+    ],
+    "planks_floor.glb": [
+      "bf088f47b3c05d1630a127ed0d38326c9e65315db76c2f22f3afb0df428749aa"
+    ]
+  },
+  "shared": {
+    "files": [
+      "brick_floor.glb",
+      "brick_box.glb"
+    ],
+    "picture": "03c0e31d20b3fc497a2337198357e2d797231da2a0fb31e410767960fd7f2061",
+    "note": "one texture for both"
+  },
+  "apart": {
+    "files": [
+      "brick_floor.glb",
+      "planks_floor.glb"
+    ],
+    "note": "two textures"
+  },
+  "lean": {
+    "files": [
+      "brick_floor.lean.glb",
+      "brick_box.lean.glb"
+    ],
+    "picture": "pictures/03c0e31d20b3fc497a2337198357e2d797231da2a0fb31e410767960fd7f2061.png",
+    "note": "fetched once for both"
+  },
+  "plain": {
+    "file": "plain.glb",
+    "note": "no picture names: reads as any glTF, nothing shared, nothing refused"
+  },
+  "units": "metres, Y up, one mesh node with no transform (the model where it stands)"
+}
